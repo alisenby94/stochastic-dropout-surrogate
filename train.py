@@ -23,8 +23,8 @@ def main():
     # Create trainer
     trainer = TournamentTrainer(model, surrogate, train_loader, val_loader, device)
     
-    # Phase 1: Supervised bootstrap
-    trainer.phase1_supervised(num_epochs=10, num_masks=10, k_best=3, k_worst=2)
+    # Phase 1: Supervised bootstrap - learn from all branches
+    trainer.phase1_supervised(num_epochs=10, num_masks=10, dropout_rate=0.5)
     
     # Phase 2: Online RL
     trainer.phase2_rl(num_epochs=90, grad_accum=5, dropout_rate=0.5)

@@ -27,6 +27,7 @@ wheels/
 venv/
 ENV/
 env/
+.venv/
 
 # PyTorch
 *.pth

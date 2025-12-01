@@ -1,0 +1,64 @@
+# Project-specific ignores
+archive/
+.venv/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+venv/
+ENV/
+env/
+.venv/
+
+# PyTorch
+*.pth
+*.pt
+
+# Data
+data/
+!data/.gitkeep
+
+# Results
+results/
+!results/.gitkeep
+
+# Checkpoints
+checkpoints/
+!checkpoints/.gitkeep
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
